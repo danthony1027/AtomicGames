@@ -1,0 +1,37 @@
+import com.beust.jcommander.Parameter;
+import com.google.gson.Gson;
+
+
+public class TestParse {	
+    	
+	public static void main(String[] args) {
+		System.exit(6);
+		int index;
+		for(index=0; index < args.length; ++index)
+		{
+			System.out.println("args[" +index +"]: " +args[index]);
+		}
+	int [][] fourArray = new int[6][7];	
+	String board;
+	String player;
+	String time;
+		
+	board = args[1];
+	player = args[3];
+	time = args[5];
+	
+	System.out.println(board);
+	System.out.println(player);
+	System.out.println(time);
+	
+	Gson gson = new Gson();
+	
+	fourArray = gson.fromJson(board, int[][].class);
+	//if(fourArray[])
+	
+	
+	
+	}
+	
+}
+

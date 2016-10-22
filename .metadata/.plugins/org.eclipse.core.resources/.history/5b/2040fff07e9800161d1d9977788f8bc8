@@ -1,0 +1,29 @@
+import com.beust.jcommander.Parameter;
+
+public class TestParse {	
+    
+	
+	int [][] fourArray = new int[6][7];
+	
+	public static void main(String[] args) {
+		int index;
+		for(index=0; index < args.length; ++index)
+		{
+			System.out.println("args[" +index +"]: " +args[index]);
+		}
+	String board;
+	String player;
+	String time;
+		
+	board = args[1];
+	player = args[3];
+	time = args[5];
+	
+	System.out.println(board);
+	System.out.println(player);
+	System.out.println(time);
+
+	}
+	
+}
+
