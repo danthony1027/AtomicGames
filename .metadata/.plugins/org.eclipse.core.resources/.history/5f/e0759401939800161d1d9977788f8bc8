@@ -65,9 +65,9 @@ public class TestParse {
 		}
 	}
 	*/
-	randMove = (int) (Math.random() *valid.size());
+	randMove = (int) Math.random() *valid.size();
 	
-	//System.exit(5);
+	System.exit(5);
 	System.exit(valid.get(randMove));
 	
 	}
