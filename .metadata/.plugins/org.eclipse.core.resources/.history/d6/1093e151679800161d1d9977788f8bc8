@@ -1,9 +1,9 @@
 import com.beust.jcommander.Parameter;
 
-public class TestParse {
+public class testParse {
 
 	public static void main(String[] args) {
-		System.out.println("Hello");
+		
 		
 	}
 
