@@ -51,17 +51,22 @@ public class TestParse {
 	for(i=0; i<7; i++){
 		for(j=5; j >= 0; j--)
 		{
-			if((fourArray[i][j] !=0) && (fourArray[i+1][j] !=0) && (fourArray[i+2][j] !=0))
+			if(fourArray[i][j] == fourArray[i+1][j] && fourArray[i][j] == fourArray[i+2][j])
 			{
-				if(valid.get(i) != 0)
+				if(fourArray[i+3][j] == 0)
 				{
-				System.exit(i+3);
+					System.exit(i+3);
+				}
+				else if(fourArray[i-1][j] == 0)
+				{
+					System.exit(i-1);	
 				}
 			}
 		}
 	}
 	randMove = (int) (Math.random() *valid.size());
 	
+	//System.exit(5);
 	System.exit(valid.get(randMove));
 	
 	}

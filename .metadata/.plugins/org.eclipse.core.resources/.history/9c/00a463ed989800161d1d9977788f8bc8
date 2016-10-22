@@ -53,10 +53,11 @@ public class TestParse {
 		{
 			if((fourArray[i][j] !=0) && (fourArray[i+1][j] !=0) && (fourArray[i+2][j] !=0))
 			{
-				if(valid.get(i) != 0)
-				{
 				System.exit(i+3);
-				}
+			}
+			if((fourArray[i][j] !=0) && (fourArray[i][j+1] !=0) && (fourArray[i][j+2] !=0))
+			{
+				System.exit(j+3);
 			}
 		}
 	}
